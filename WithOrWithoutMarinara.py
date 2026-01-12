@@ -2,3 +2,4 @@
 
 print("Welcome Branch - Developer: Will H")
 print("\nWelcome to InfotechCenter V.1.0")
+print("\nInfoTechCenter is Booting Up...")
