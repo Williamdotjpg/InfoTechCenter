@@ -15,7 +15,7 @@ while x != 20:
     x += 1  #or x = x+1
     ellipsisMessage = ("InfoTechCenter OS is Booting" + "." * ellipsis)
     ellipsis += 1
-    sys.stdout.write("\r" + ellipsisMessage + "   ")
+    sys.stdout.write("\r\033[K" + ellipsisMessage)
     sys.stdout.flush()
     time.sleep(.5)
     if ellipsis == 4:
