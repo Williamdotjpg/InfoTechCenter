@@ -198,6 +198,24 @@ class Car:
         print(f"   ➤ Driving mode set to: {self.driving_mode}\n")
         print(f"   ➤ Max speed limited to: {self.max_speed} mph\n")
         print("✅ Adjustments complete.\n")
+# ---------------- Main Program ----------------
+
+
+# Generate today's weather (randomly simulated)
+weather_today = random_weather()
+
+# Display the detected weather
+print("\n🌍 Today's weather:", weather_today, "\n")
+
+# Adjust the user's alarm based on the weather
+update_alarm_based_on_weather(weather_today, base_alarm_time="07:00")
+
+# Create a Car instance
+my_car = Car()
+
+# Adjust the car's behavior according to the weather
+my_car.adjust_for_weather(weather_today)
+
 
 #Gasoline Branch
 
@@ -288,23 +306,7 @@ def update_alarm_for_gas(needs_gas, base_alarm="07:00"):
 
 
 
-# ---------------- Main Program ----------------
 
-
-# Generate today's weather (randomly simulated)
-weather_today = random_weather()
-
-# Display the detected weather
-print("\n🌍 Today's weather:", weather_today, "\n")
-
-# Adjust the user's alarm based on the weather
-update_alarm_based_on_weather(weather_today, base_alarm_time="07:00")
-
-# Create a Car instance
-my_car = Car()
-
-# Adjust the car's behavior according to the weather
-my_car.adjust_for_weather(weather_today)
 
 
 loading("🚘 Starting morning check")
